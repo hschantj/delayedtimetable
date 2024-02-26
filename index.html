@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <label for="stime">開始時間:</label>
+        <input type="text" id="stime" value = "0800">
+        <br><br>
+        <label>
+            <label>
+                <input type="radio" name="grade" value="jr">初中
+            </label>
+            <label>
+                <input type="radio" name="grade" value="sr">高中
+            </label>
+        </label>
+        <br><br>
+        <input type="button" value="提交" onclick="isValid24HourTime()">
+    </div>
+    <div id="generateTimetable">
+        <h1 id="timetableTitle">时间表</h1>
+        <table>
+            <tr>
+                <td>節次<br>Period</td>
+                <td></td>
+                <td colspan="2">0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr id="ttime">
+                <td>時間<br>Time</td>
+                <td>0715<br>0730</td>
+                <td>0730<br>0745</td>
+                <td>0745<br>0800</td>
+                <td id="time1"></td>
+                <td id="time2"></td>
+                <td id="time3"></td>
+                <td id="time4"></td>
+                <td id="time5"></td>
+                <td id="time6"></td>
+                <td id="time7"></td>
+                <td id="time8"></td>
+                <td id="time9"></td>
+                <td id="time10"></td>
+                <td id="time11"></td>
+            </tr>
+            <tr>
+                <td>星期一</td>
+                <td rowspan="6" class="vtext">早自習</td>
+                <td rowspan="6" class="vtext">班導師時間</td>
+                <td rowspan="6" class="vtext">晨讀</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>星期二</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>星期三</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>星期四</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>星期五</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>星期六</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

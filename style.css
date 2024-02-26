@@ -1,0 +1,35 @@
+* {
+    user-select: none;
+}
+
+table {
+    margin: auto;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+div {
+    padding: 0 20px;
+}
+
+table,
+td,
+tr,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    text-align: center;
+    height: 50px;
+    width: 75px;
+}
+
+td.vtext {
+    writing-mode: vertical-lr;
+}
