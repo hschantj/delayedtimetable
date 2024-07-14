@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <label for="stime">开始时间<br>Staring Time</label>
+        <input type="text" id="stime" value="0800">
+        <br><br>
+        <input type="button" value="Submit" onclick="isValid24HourFormat()">
+    </div>
+    <div id="generateTimetable">
+        <h1 id="currentTime"></h1>
+        <h1 id="timetableTitle">初中时间表<br>Junior Timetable</h1>
+        <table>
+            <tr>
+                <td class="print">节次<br>Period</td>
+                <td class="print"></td>
+                <td class="print" colspan="2">0</td>
+                <td class="print-break"></td>
+                <td class="print" id="ctime1">1</td>
+                <td class="print" id="ctime2">2</td>
+                <td class="print" id="ctime3">下课<br>Recess</td>
+                <td class="print" id="ctime4">3</td>
+                <td class="print" id="ctime5">4</td>
+                <td class="print-break"></td>
+                <td class="print" id="ctime6">5</td>
+                <td class="print" id="ctime7">下课<br>Recess</td>
+                <td class="print" id="ctime8">6</td>
+                <td class="print" id="ctime9">7</td>
+                <td class="print-break"></td>
+                <td class="print" id="ctime10">8</td>
+                <td class="print" id="ctime11">9</td>
+                <td class="print-break"></td>
+                <td class="print" id="ctime12">10</td>
+                <td class="print" id="ctime13">11</td>
+            </tr>
+            <tr id="juniorTimeTable">
+                <td class="print">时间<br>Time</td>
+                <td class="print">07:15<br>07:30</td>
+                <td class="print">07:30<br>07:45</td>
+                <td class="print" id="time0"></td>
+                <td class="print-break"></td>
+                <td class="print" id="time1"></td>
+                <td class="print" id="time2"></td>
+                <td class="print" id="time3"></td>
+                <td class="print" id="time4"></td>
+                <td class="print" id="time5"></td>
+                <td class="print-break"></td>
+                <td class="print" id="time6"></td>
+                <td class="print" id="time7"></td>
+                <td class="print" id="time8"></td>
+                <td class="print" id="time9"></td>
+                <td class="print-break"></td>
+                <td class="print" id="time10"></td>
+                <td class="print" id="time11"></td>
+                <td class="print-break"></td>
+                <td class="print" id="time12"></td>
+                <td class="print" id="time13"></td>
+            </tr>
+        </table>
+        <h1 id="timetableTitle">高中时间表<br>Senior Timetable</h1>
+        <table>
+            <tr>
+                <td class="print">节次<br>Period</td>
+                <td class="print"></td>
+                <td class="print" colspan="2">0</td>
+                <td class="print-break"></td>
+                <td class="print" id="ctime1">1</td>
+                <td class="print" id="ctime2">2</td>
+                <td class="print" id="ctime3">下课<br>Recess</td>
+                <td class="print" id="ctime4">3</td>
+                <td class="print" id="ctime5">4</td>
+                <td class="print-break"></td>
+                <td class="print" id="ctime6">5</td>
+                <td class="print" id="ctime8">6</td>
+                <td class="print" id="ctime7">下课<br>Recess</td>
+                <td class="print" id="ctime9">7</td>
+                <td class="print-break"></td>
+                <td class="print" id="ctime10">8</td>
+                <td class="print" id="ctime11">9</td>
+                <td class="print-break"></td>
+                <td class="print" id="ctime12">10</td>
+                <td class="print" id="ctime13">11</td>
+            </tr>
+            <tr id="seniorTimeTable">
+                <td class="print">时间<br>Time</td>
+                <td class="print">07:15<br>07:30</td>
+                <td class="print">07:30<br>07:45</td>
+                <td class="print" id="time0"></td>
+                <td class="print-break"></td>
+                <td class="print" id="time1"></td>
+                <td class="print" id="time2"></td>
+                <td class="print" id="time3"></td>
+                <td class="print" id="time4"></td>
+                <td class="print" id="time5"></td>
+                <td class="print-break"></td>
+                <td class="print" id="time6"></td>
+                <td class="print" id="time7"></td>
+                <td class="print" id="time8"></td>
+                <td class="print" id="time9"></td>
+                <td class="print-break"></td>
+                <td class="print" id="time10"></td>
+                <td class="print" id="time11"></td>
+                <td class="print-break"></td>
+                <td class="print" id="time12"></td>
+                <td class="print" id="time13"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
